@@ -85,20 +85,20 @@ function calculateNewCoordinates(
 
   let distSignificant, distNonSignificant;
   if (slope <= 2) {
-    distSignificant = distance * 0.75 * sign;
-    distNonSignificant = distance * 0.3 * sign;
+    distSignificant = distance * 0.8 * sign;
+    distNonSignificant = distance * 0.15 * sign;
   } else if (slope <= 4) {
     distSignificant = distance * 0.85 * sign;
     distNonSignificant = distance * 0.2 * sign;
   } else if (slope <= 8) {
-    distSignificant = distance * 0.9 * sign;
+    distSignificant = distance * 0.92 * sign;
     distNonSignificant = distance * 0.1 * sign;
   } else if (slope <= 16) {
-    distSignificant = distance * 0.95 * sign;
+    distSignificant = distance * 0.97 * sign;
     distNonSignificant = distance * 0.05 * sign;
   } else {
     distSignificant = distance * sign;
-    distNonSignificant = distance * 0.05;
+    distNonSignificant = distance * 0.005;
   }
 
   let adjustedX =
