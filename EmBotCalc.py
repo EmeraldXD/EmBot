@@ -1,3 +1,4 @@
+# Revised to python
 def calculate_direction(coords1, coords2):
     x_change = coords2[0] - coords1[0]
     z_change = coords2[1] - coords1[1]
