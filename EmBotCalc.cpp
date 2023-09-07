@@ -1,3 +1,4 @@
+// Revised to c++
 #include <iostream>
 #include <cmath>
 
